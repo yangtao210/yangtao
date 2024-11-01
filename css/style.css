@@ -146,6 +146,6 @@ ul, li {
 /* 小屏幕 */
 @media (max-width: 414px) {
     .industry-box ul li {
-        width: 100%;
+        width: 20%;
     }
 }
