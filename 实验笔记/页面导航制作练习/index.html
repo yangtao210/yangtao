@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>导航</title>
+        <style>
+        .container{
+            /* 宽度100% */
+            width: 100%;
+            /* 高度自动 */
+            height: auto;
+            /* 浮动靠左 */
+            float: left;
+            /* 背景纵向渐变 */
+            background:linear-gradient(to bottom,#0a55b4,#06318d);
+            /* 设置元素为弹性布局 */
+            display: flex;
+            /* 设置子元素居中对齐 */
+            justify-content: center;
+        }
+        .logo{
+            /* 宽度自动 */
+            width: auto;
+            /* 高度108px */
+            height: 108px;
+            /* 浮动为左 */
+            float: left;
+        }
+        .nav{
+            /* 去除列表项的默认样式 */
+            list-style: none;
+            /* 内外边距0 */
+            margin: 0;
+            padding: 0;
+        }
+        .nav li{
+            /* 设置宽度为200px */
+            width: 200px;
+            /* 设置高度为104px */
+            height: 104px;
+            /* 设置浮动为左 */
+            float: left;
+            /* 设置行高为104px */
+            line-height: 104px;
+            /* 设置文本居中 */
+            text-align: center;
+        }
+        .nav li a{
+             /* 设置文本装饰为无 */
+            text-decoration: none;
+            /* 设置文本颜色为白色 */
+            color: rgb(255, 255, 255);
+            /* 设置字体大小为20px */
+            font-size: 20px;
+        }
+        .nav li:hover{
+            /* 鼠标悬浮时背景变色,纵向渐变 */
+            background:linear-gradient(to bottom,#000069,#000013);
+        }
+        </style>
+    </head>
+    <body>
+         <div class="container">
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+                <div class="nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">学院介绍</a></li>
+                    <li><a href="#">院系展示</a></li>
+                    <li><a href="#">师生风采</a></li>
+                </div>
+            </div>
+    </body>
+</html>

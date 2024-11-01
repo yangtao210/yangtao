@@ -1,0 +1,91 @@
+
+body,ul,p{
+    padding: 0;
+    margin: 0;/* 内外边距0 */
+    font-family: 'Arial',sans-serif;
+}
+h2{
+    text-align: center;/* 居中 */
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+.con{
+    width: 1200px;
+    margin: 50px auto;/* 外边距为50px，水平居中 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);/* 阴影 */
+    border-radius: 8px;/* 圆角边框*/
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+ul{
+    list-style: none;/* 无样式 */
+    display: flex;/* 弹性布局 */
+    /* 设置子元素在主轴上的对齐方式，使子元素之间的间距相等，第一个子元素和最后一个子元素分别靠边 */
+    justify-content: space-between;
+    /* 设置弹性盒子的子元素在必要时换行 */
+    flex-wrap: wrap;
+    padding: 0 15px;/* 上下边距0 左右15px */
+}
+
+li{
+    overflow: hidden;
+    border: 1px solid #e7e7e7;/* 边框实线白色 */
+    width: 24%;
+    height: 270px;
+    margin-bottom: 10px;/* 下外边距10px */
+    transition: transform 0.3s;/* 设置元素在0.3秒内完成transform属性的过渡效果 */
+    border-radius: 8px;/* 圆角边框 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);/* 阴影 */
+    padding-bottom: 10px;
+}
+li:hover{
+    transform: scale(1.05);/* 鼠标悬浮时元素放大1.05倍 */
+}
+li img{
+    height: 150px;
+    width: 100%;
+    object-fit: cover;/* 图片适应容器 */
+    
+}
+li p{
+    overflow: hidden;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 限制显示3行 */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;/* 超出部分显示省略号 */
+}
+li div{
+    margin: 7px 0 22px 10px;/* 外边距 */
+    font-weight: bold;/* 字体加粗 */
+    font-size: 18px;
+    color: #333;
+}
+
+/* 大屏幕 */
+@media (max-width:1200px) {
+    .con{
+        width: 100%;
+    }
+}
+/* 中屏幕 */
+@media (max-width:1024px) {
+    li{
+        width: 32%;
+    }
+}
+/* 中小屏幕 */
+@media (max-width:768px) {
+    li{
+        width: 49%;
+    }
+}
+/* 小屏幕 */
+@media (max-width:414px) {
+    li{
+        width: 100%;
+    }
+}

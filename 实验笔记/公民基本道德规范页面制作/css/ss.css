@@ -1,0 +1,71 @@
+
+
+/* 设置div的宽度为837px，上下边距为0，左右边距自动，高度为680px，边框为1px的实线，颜色为#EEF3AA */
+div{
+    width: 837px;
+    margin:0 auto;
+    height: 680px;
+    border: 1px solid #EEF3AA;
+}
+/* 设置li的display属性为inline，上下边距为1px，左右边距为22px，字体大小为22px */
+li{
+    display: inline;
+    margin:1px 22px;
+    font-size:22px;
+}
+/* 设置链接在激活、访问过和未访问时的样式 */
+a:active,a:visited,a:link{
+    /* 去除链接的下划线 */
+    text-decoration: none;
+    /* 设置链接的颜色为黑色 */
+    color: black;
+}
+
+/* 设置链接在鼠标悬停时的样式 */
+a:hover{
+    /* 去除链接的下划线 */
+    text-decoration: none;
+    /* 设置链接的下边框为5像素的红色实线 */
+    border-bottom: 5px solid red;
+    /* 设置链接的颜色为红色 */
+    color: red;
+}
+
+img{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+p{
+    font-family: "微软雅黑";
+    /* 字体大小 */
+    font-size:16px;
+    /* 行距30px */
+    line-height: 30px;
+    /* 缩进 */
+    text-indent: 2em;
+    /* 上边距 */
+    margin-top: 10px;
+    /* 下边距 */
+    margin-bottom: 30px;
+}
+hr{
+    /* 设置hr的宽度为837px */
+    width: 837px;
+    color: red;
+    /* 粗细 */
+    height: 4px;
+    /* 颜色为红色 */
+    background-color: red;
+    margin-top: 20px;
+}
+
+footer{
+    /* 设置底部div的宽度为837px，上下边距为0，左右边距自动，高度为100px，边框为1px的实线，颜色为#EEF3AA */
+    width: 837px;
+    margin:0 auto;
+    height: 100px;
+    /* 居中 */
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-color: aqua;
+}
+.logo{
+    width: auto;
+    height: 108px;
+    /* 左边距 */
+    margin-left: 50px;
+    float: left;
+}
+.nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    width: 200px;
+    height: 104px;
+    float: left;
+    text-align: center;
+    background-color: rgb(1, 31, 31);
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px
+}

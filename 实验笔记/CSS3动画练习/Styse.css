@@ -1,0 +1,102 @@
+
+.windmill{
+    position: absolute;/* 设置绝对定位 */
+    z-index: 10;
+    top: 280px;
+    left: 660px;
+    width: 400px;   
+    height: 400px;
+    animation: circle 2s infinite linear;/* 添加动画，动画时间2秒，一直循环，匀速 */
+}
+.windmill:hover,
+.leaves.right:hover,
+.leaves.bottom:hover,
+.leaves.left:hover,
+.leaves.top:hover{
+    animation-play-state: paused;/* 鼠标悬停在风车上时，动画暂停*/
+}
+
+/* 将边框粗细设置成100，挤压出叶片的样子 */
+.leaves{
+    position: absolute;/* 绝对定位 */   
+    border: 100px solid transparent;/* 边框粗细100px,实线，颜色透明 */
+}
+.leaves.right{
+    /* 右边框设置颜色，当上方的叶片 */
+    border-right-color: rgb(152, 34, 165);
+    animation:color_right 2s infinite linear;/* 添加动画，动画时间2秒，一直循环，匀速 */
+    
+}
+.leaves.bottom{
+    /* 下边框设置颜色，当右方的叶片 */
+    color: aquamarine;
+    left: 200px;
+    border-bottom-color: aqua;
+    animation: color_bottom 2s infinite linear;/* 添加动画，动画时间2秒，一直循环，匀速 */
+    
+}
+.leaves.left{
+    /* 左边框设置颜色，当下方的叶片 */
+    top: 200px;
+    left: 200px;
+    border-left-color: blue;
+    animation: color_left 2s infinite linear;/* 添加动画，动画时间2秒，一直循环，匀速 */
+    
+}
+.leaves.top{
+    /* 上边框设置颜色，当左方的叶片 */
+    top: 200px;
+    border-top-color: black;
+    animation: color_top 2s infinite linear;/* 添加动画，动画时间2秒，一直循环，匀速 */
+}
+
+/* 风车支点 */
+.fulcrum{
+    position: absolute;/* 绝对定位 */
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 10px;
+    background-color: black;/* 背景填充 */
+    border-radius: 5px;/* 圆角边框 */
+}
+
+
+@keyframes circle{
+    /* 动画开始时0度，结束时360度 */
+    to{
+        transform: rotate(0);
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+/* 旋转过程中叶片变色 */
+@keyframes color_right {
+    0% {border-right-color: rgb(226, 29, 29);}
+    25% {border-right-color: rgb(205, 17, 225);}
+    50% {border-right-color: rgb(13, 220, 220);}
+    75% { border-right-color: rgb(19, 224, 29);}
+    100% {border-right-color: rgb(217, 205, 32);}
+}
+@keyframes color_bottom {
+    0% {border-bottom-color: rgb(188, 22, 221);}
+    25% {border-bottom-color: rgb(25, 68, 210);}
+    50% {border-bottom-color: rgb(33, 194, 28);}
+    75% { border-bottom-color: rgb(195, 212, 42);}
+    100% {border-bottom-color: rgb(220, 30, 30);}
+}
+@keyframes color_left {
+    0% {border-left-color: rgb(16, 84, 212);}
+    25% {border-left-color: rgb(24, 222, 44);}
+    50% {border-left-color: rgb(208, 227, 32);}
+    75% { border-left-color: rgb(197, 23, 38);}
+    100% {border-left-color: rgb(230, 33, 171);}
+}
+@keyframes color_top {
+    0% {border-top-color: rgb(29, 219, 44);}
+    25% {border-top-color: rgb(206, 228, 44);}
+    50% {border-top-color: rgb(241, 20, 20);}
+    75% { border-top-color: rgb(223, 62, 231);}
+    100% {border-top-color: rgb(22, 110, 226);}
+}

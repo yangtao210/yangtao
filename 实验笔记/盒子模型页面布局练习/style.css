@@ -1,0 +1,45 @@
+div{
+    /* 高度464px */
+    height: 479px;
+    /* 宽度360px */
+    width: 370px;
+    /* 背景色 */
+    background-color: #339933;
+    /* 水平居中 */
+    margin: 0 auto;
+    /* 内边距80 */
+    padding: 80px;
+    /* 设置盒模型为border-box */
+    box-sizing: border-box;
+}
+img{
+    /* 宽度210px */
+    width: 200px;
+    /* 高度210px */
+    height: 200px;
+    /* 边框实线、白色、5px */
+    border: 5px solid white;
+    text-align: center;
+}
+h1{
+    /* 黑体 */
+    font-family: "黑体";
+    /* 字体大小22px */
+    font-size: 22px;
+    /* 字体白色 */
+    color: white;
+    /* 字体加粗 */
+    font-weight: bold;
+    /* 居中 */
+    text-align: center;
+    /* 上边距50px */
+    margin-top: 50px;
+    /* 下边距20px */
+    margin-bottom: 20px;
+}
+p{
+    font-family: "宋体";
+    font-size:12px;
+    color:black;
+    text-align: center;
+}

@@ -1,67 +1,254 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="utf-8">
-    <title>公司行业页面</title>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    <body>
-        <div class="industry">
-            <h2>行业</h2>
-        <p>CFGS架构是HAB"云网融合"解决方案的核心支撑，将云计算、智慧网络、IT安全、移动化等解决方案融合贯通...</p>
-        <p>并通过软件定义与资源编排，实现IT基础设施资源自动化调度、弹性扩展、应需而动。</p>
-        </div>
-        <div class="industry-box">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(to bottom, #0361b9, #025880);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            padding-bottom: 100px;
+            background-color: #fff;
+            width: 80%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            margin-top: 0;
+        }
+        main ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        main ul li {
+            margin-bottom: 10px;
+        }
+        main ul li a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        main ul li a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: linear-gradient(to bottom, #288dec, #025880);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%; /* 确保页脚宽度与视口宽度相同 */
+            z-index: 1000; /* 确保页脚在其他内容之上 */
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>web学习笔记</h1>
+    </header>
+    <nav>
         <ul>
-            <li>
-                <div class="tran_scale">
-                    <a href="#">
-                        <img src="images/shanghai.jpg">
-                    </a>
-                    <h5>
-                        服务web技术大学
-                    </h5>
-                    <div class="hover-con">
-                        <h1>服务web技术大学</h1>
-                        <p>HAB公司近日成功中标“Web技术大学SDN下一代校园网”项目，将对Web技术大学两个校区的原有核心网络进行面向
-                            SDN的下一代校园网升级改造，为一万多名在校师生提供智能化的校园网络服务</p>
-                        <a class="btn-more" href="#">查看更多</a>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="tran_scale">
-                    <a href="#">
-                        <img src="images/tianjin.jpg">
-                    </a>
-                    <h5>
-                        服务天津地铁
-                    </h5>
-                    <div class="hover-con">
-                        <h1>服务web技术大学</h1>
-                        <p>HAB公司作为一家本土化、专注在交通信息化的解决方案供应商，
-                            紧跟中国交通信息化步伐，利用研发创新与交通贴身服务，为交通信息化带来更多……</p>
-                        <a class="btn-more" href="#">查看更多</a>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="tran_scale">
-                    <a href="#">
-                        <img src="images/pudong.jpg">
-                    </a>
-                    <h5>
-                        服务浦东政务
-                    </h5>
-                    <div class="hover-con">
-                        <h1>服务web技术大学</h1>
-                        <p>HAB公司连续多年保持政务信息化建设领域市场份额第一，
-                            在中央部委的应用份额超过了70%,凭借对政务的理解和先进的云计算技术成为政务云最……                        </p>
-                        <a class="btn-more" href="#">查看更多</a>
-                    </div>
-                </div>
-            </li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">关于我</a></li>
+            <li><a href="#">联系我</a></li>
         </ul>
-    </div>
-    </body>
+    </nav>
+    <main>
+        <h2>实验笔记</h2>
+        <div class="industry-box">
+            <ul>
+                <li>
+                    <div class="tran_scale">
+                        <a href="实验笔记/个人基本信息介绍/index.html">
+                            <img src="images/0.jpg">
+                        </a>
+                        <h5>
+                            个人基本信息介绍
+                        </h5>
+                        <div class="hover-con">
+                            <h1>个人基本信息介绍</h1>
+                            <p>基础html网页应用</p>
+                            <a class="btn-more" href="实验笔记/个人基本信息介绍/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="tran_scale">
+                        <a href="实验笔记/中国传统文化故事/index.html">
+                            <img src="images/1.jpg">
+                        </a>
+                        <h5>
+                            中国传统文化故事页面
+                        </h5>
+                        <div class="hover-con">
+                            <h1>中国传统文化故事页面</h1>
+                            <p>掌握 CSS 中文字相关属性 color， text-align， line-height， font-size，
+                                background， font-weight， text-indent 等样式设置</p>
+                            <a class="btn-more" href="实验笔记/中国传统文化故事/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+    
+                <li>
+                    <div class="tran_scale">
+                        <a href="#">
+                            <img src="images/2.jpg">
+                        </a>
+                        <h5>
+                            公民基本道德规范页面制作
+                        </h5>
+                        <div class="hover-con">
+                            <h1>公民基本道德规范页面制作</h1>
+                            <p>使用列表、超链接、浮动框架等标签，结合CSS样式设置，公民基本道德规范页面制作。</p>
+                            <a class="btn-more" href="实验笔记/公民基本道德规范页面制作/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="tran_scale">
+                        <a href="#">
+                            <img src="images/4.jpg">
+                        </a>
+                        <h5>
+                            社会实践调查问卷
+                        </h5>
+                        <div class="hover-con">
+                            <h1>社会实践调查问卷</h1>
+                            <p>掌握表单标签及常用表单控件的使用。理解表格布局表单元素的方法和技巧。</p>
+                            <a class="btn-more" href="实验笔记/社会实践调查问卷/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="tran_scale">
+                        <a href="#">
+                            <img src="images/5.jpg">
+                        </a>
+                        <h5>
+                            盒子模型页面布局练习
+                        </h5>
+                        <div class="hover-con">
+                            <h1>盒子模型页面布局练习</h1>
+                            <p>掌握盒子模型的使用。理解盒子模型的方法和技巧。</p>
+                            <a class="btn-more" href="实验笔记/盒子模型页面布局练习/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="tran_scale">
+                        <a href="#">
+                            <img src="images/6.jpg">
+                        </a>
+                        <h5>
+                            页面导航制作练习
+                        </h5>
+                        <div class="hover-con">
+                            <h1>页面导航制作练习</h1>
+                            <p>掌握元素浮动的使用。理解元素浮动的方法和技巧。</p>
+                            <a class="btn-more" href="实验笔记/页面导航制作练习/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="tran_scale">
+                        <a href="#">
+                            <img src="images/7.jpg">
+                        </a>
+                        <h5>
+                            CSS3动画练习
+                        </h5>
+                        <div class="hover-con">
+                            <h1>CSS3动画练习</h1>
+                            <p>设计一个风车旋转动画页面效果鼠标悬停风车上，风车开始旋转动画。</p>
+                            <a class="btn-more" href="实验笔记/CSS3动画练习/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="tran_scale">
+                        <a href="#">
+                            <img src="images/8.jpg">
+                        </a>
+                        <h5>
+                            公司行业页面
+                        </h5>
+                        <div class="hover-con">
+                            <h1>公司行业页面</h1>
+                            <p>学会使用合适的标签布局页面结构， 采用合理的布局样式设置页面展示
+                                效果；掌握 CSS3 动画属性的使用方法， 能使用动画属性结合鼠标悬停进行交互。</p>
+                            <a class="btn-more" href="实验笔记/公司行业页面/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="tran_scale">
+                        <a href="#">
+                            <img src="images/9.jpg">
+                        </a>
+                        <h5>
+                            旅游景点
+                        </h5>
+                        <div class="hover-con">
+                            <h1>旅游景点</h1>
+                            <p>制作一个响应式布局的旅游景点欣赏页面</p>
+                            <a class="btn-more" href="实验笔记/旅游景点/index.html">查看更多</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>版权所有 &copy; 2024 学习笔记</p>
+    </footer>
+</body>
 </html>
